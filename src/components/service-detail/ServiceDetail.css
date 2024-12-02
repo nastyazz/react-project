@@ -1,73 +1,71 @@
-.service-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f4f4f9;
-    padding: 20px;
-  }
-  .service-card {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    width: 100%;
-    max-width: 600px;
-    transition: transform 0.3s ease;
-  }
-  .service-card:hover {
-    transform: translateY(-10px);
-  }
-  .service-card__image-container {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-  }
-  
-  .service-card__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  .service-card__image-container:hover .service-card__image {
-    transform: scale(1.05);
-  }
-  .service-card__content {
-    padding: 20px;
-  }
- 
-  .service-card__title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  /* Описание услуги */
-  .service-card__description {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    text-align: center;
-  }
-  
-  /* Кнопка */
-  .service-card__button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .service-card__button:hover {
-    background-color: #45a049;
-  }
+service-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  padding: 20px;
+}
+.service-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+}
+.service-card__image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.service-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.service-card__image-container:hover .service-card__image {
+  transform: scale(1.05);
+}
+.service-card__content {
+  padding: 20px;
+}
+
+.service-card__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.service-card__description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.service-card__button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-card__button:hover {
+  background-color: #45a049;
+}
