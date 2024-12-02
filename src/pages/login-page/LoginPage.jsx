@@ -46,10 +46,11 @@ const LoginPage = () => {
 
     return (
         <div className="login-page">
-            <Text size="l" view="primary" weight="bold" align="center" className="login-title">
+            <Text size="l" view="primary" weight="bold" align="center" className="login-title" color="fff">
                 Вход в сервис
             </Text>
-
+            
+            
             <div className="login-form">
                 <TextField
                     label="Имя пользователя"
