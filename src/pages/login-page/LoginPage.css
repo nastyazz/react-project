@@ -1,119 +1,34 @@
-/* Контейнер всей страницы */
-.login-container {
-    font-family: Arial, sans-serif;
-    width: 100%;
-    vertical-align: middle;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Верхняя панель навигации */
-  .header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; /* Размещаем кнопки с двух сторон */
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  /* Кнопки в навигации */
-  .nav-button,
-  .profile-button,
-  .login-button {
-    padding: 10px 15px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
-    text-decoration: none; /* Убираем подчеркивание у ссылок */
-    margin: 0 10px; /* Добавим промежутки между кнопками */
-  }
-  
-  .nav-button:hover,
-  .profile-button:hover,
-  .login-button:hover {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  /* Форма авторизации */
-  .login-form-container {
-    margin-top: 50px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-  
-  .login-field {
-    margin-bottom: 15px;
-  }
-  
-  .login-field label {
-    font-size: 14px;
-    margin-bottom: 5px;
-    display: block;
-  }
-  
-  .login-field input {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  .form-button {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .form-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .login-error {
-    color: #d9534f;
-    background-color: #f8d7da;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #f5c6cb;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  /* Нижний футер */
-  footer {
-    width: 100%;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #ddd;
-  }
-  
-  .footer-button {
-    padding: 10px 15px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
-  }
-  
-  .footer-text {
-    font-size: 14px;
-    color: #777;
-  }
-  
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.login-title {
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.error-text {
+  color: #ff4d4f;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.login-button {
+  margin-top: 20px;
+  width: 100%;
+}

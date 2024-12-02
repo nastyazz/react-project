@@ -1,24 +1,90 @@
+/* Контейнер для списка услуг */
 .services-list {
     display: flex;
-    flex-direction: column; /* Устанавливаем вертикальное расположение */
-    gap: 20px; /* Расстояние между списком и пагинацией */
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
-    align-items: center; /* Центрирование списка */
+    align-items: center;
     padding: 20px;
 }
 
+/* Список услуг */
 .news-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    width: 100%; /* Занимает всю ширину родительского контейнера */
+    width: 100%;
 }
 
-.services-pagination {
+/* Контейнер пагинации */
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center; /* Центрирование пагинации */
+}
+
+/* Кнопки пагинации */
+.pagination-button {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+}
+
+/* Эффект при наведении на кнопки пагинации */
+.pagination-button:hover {
+    background-color: #444444;
+    transform: scale(1.05);
+}
+
+/* Кнопка пагинации в disabled-стиле */
+.pagination-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Стрелки пагинации */
+.pagination-button.arrow {
+    font-size: 18px; /* Размер стрелок */
+    width: 35px; /* Размер кнопки */
+    height: 35px; /* Размер кнопки */
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    width: 100%;
-    background-color: #e8f4ff;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+}
+
+.pagination-button.arrow:hover {
+    background-color: #555;
+}
+
+/* Номера страниц */
+.page-number {
+    font-size: 1rem;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Эффект при наведении на номера страниц */
+.page-number:hover {
+    background-color: #ddd;
+}
+
+/* Активная страница */
+.page-number.active {
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
 }

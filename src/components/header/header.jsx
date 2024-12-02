@@ -1,37 +1,38 @@
+import React from "react";
 import { Button } from "@consta/uikit/Button";
 import { NavLink } from "react-router-dom";
-import AppRoute from "../../const.js"; // Убедитесь, что путь к файлу правильный
-import './header.css';
+import AppPage from "../../const";
+import "./Header.css";
 import { Layout } from "@consta/uikit/Layout";
 import { useSelector } from "react-redux";
 
-const Navbar = () => {
-  const user = useSelector((state) => state.user); // Убираем типизацию
+const Header = () => {
+  const user = useSelector((state) => state.user);
 
   return (
     <Layout>
-      <div className="navbar">
-        <div className="navbar-container">
+      <div className="header">
+        <div className="header-container">
           {user.isAuthenticated ? (
-            <div className="navbar-group left">
-              <NavLink to={AppRoute.main} className={"navbar-button"}>
-                <Button label={"Главная страница"} />
+            <div className="header-group left">
+              <NavLink to={AppPage.main} className="header-button">
+                <Button label="Главная страница" />
               </NavLink>
-              <NavLink to={AppRoute.services} className={"navbar-button"}>
-                <Button label={"Услуги компании"} />
+              <NavLink to={AppPage.services} className="header-button">
+                <Button label="Услуги компании" />
               </NavLink>
             </div>
           ) : (
             <h3>Вы не зарегистрированы</h3>
           )}
-          <div className="navbar-group right">
+          <div className="header-group right">
             {!user.isAuthenticated ? (
-              <NavLink to={AppRoute.login} className={"navbar-button"}>
-                <Button label={"Вход"} />
+              <NavLink to={AppPage.login} className="header-button">
+                <Button label="Вход" />
               </NavLink>
             ) : (
-              <NavLink to={AppRoute.userinfo} className={"navbar-button"}>
-                <Button label={user.email} />
+              <NavLink to={`${AppPage.userinfo}${user.id}`} className="header-button">
+                <Button label="Профиль" />
               </NavLink>
             )}
           </div>
@@ -42,4 +43,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

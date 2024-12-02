@@ -1,4 +1,3 @@
-/* Общие стили страницы */
 .service-page {
     display: flex;
     justify-content: center;
@@ -7,8 +6,6 @@
     background-color: #f4f4f9;
     padding: 20px;
   }
-  
-  /* Оформление карточки услуги */
   .service-card {
     display: flex;
     flex-direction: column;
@@ -20,13 +17,9 @@
     max-width: 600px;
     transition: transform 0.3s ease;
   }
-  
-  /* Эффект при наведении на карточку */
   .service-card:hover {
     transform: translateY(-10px);
   }
-  
-  /* Контейнер для изображения */
   .service-card__image-container {
     width: 100%;
     height: 200px;
@@ -39,18 +32,13 @@
     object-fit: cover;
     transition: transform 0.3s ease;
   }
-  
-  /* Эффект увеличения изображения при наведении */
   .service-card__image-container:hover .service-card__image {
     transform: scale(1.05);
   }
-  
-  /* Контент карточки */
   .service-card__content {
     padding: 20px;
   }
-  
-  /* Заголовок услуги */
+ 
   .service-card__title {
     font-size: 24px;
     font-weight: 600;
@@ -83,4 +71,3 @@
   .service-card__button:hover {
     background-color: #45a049;
   }
-  
