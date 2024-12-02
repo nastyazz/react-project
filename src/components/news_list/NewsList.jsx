@@ -1,30 +1,25 @@
 import React, { useState } from "react";
-import "./NewsList.css";  // Импортируем CSS файл для стилей
+import "./NewsList.css";
 
 const NewsList = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 4; // Количество новостей на одной странице
-
-  // Функция для получения новостей для текущей страницы
+  const itemsPerPage = 4;
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Функция для перехода на следующую страницу
   const nextPage = () => {
     if (currentPage < Math.ceil(data.length / itemsPerPage)) {
       setCurrentPage(currentPage + 1);
     }
   };
 
-  // Функция для перехода на предыдущую страницу
   const prevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
     }
   };
 
-  // Если данных нет
   if (!data || data.length === 0) {
     return <p>Нет новостей для отображения.</p>;
   }
@@ -43,7 +38,6 @@ const NewsList = ({ data }) => {
         ))}
       </div>
 
-      {/* Пагинация */}
       <div className="pagination">
         <button
           onClick={prevPage}
