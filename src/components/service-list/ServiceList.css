@@ -1,0 +1,24 @@
+.services-list {
+    display: flex;
+    flex-direction: column; /* Устанавливаем вертикальное расположение */
+    gap: 20px; /* Расстояние между списком и пагинацией */
+    justify-content: center;
+    align-items: center; /* Центрирование списка */
+    padding: 20px;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%; /* Занимает всю ширину родительского контейнера */
+}
+
+.services-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #e8f4ff;
+}
