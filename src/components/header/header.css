@@ -1,63 +1,45 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 .header {
-  background-color: #1e1e1e;
-  padding: 15px 30px;
-  position: fixed;
+  background-color: #242424;
+  padding: 10px 20px;
   width: 100%;
   top: 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .header-group {
   display: flex;
-  gap: 10px;
 }
 
 .header-button {
-  background-color: #2d2d2d;
+  background-color: #242424;
   color: white;
-  border: 1px solid transparent;
-  border-radius: 5px;
+  border: none;
   padding: 10px 20px;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  transition: all 0.3s;
-  text-decoration: none;
-  text-align: center;
+  transition: background-color 0.3s;
+  margin: 0 5px;
 }
 
 .header-button:hover {
-  background-color: #4a4a4a;
-  border: 1px solid #ffffff;
+  background-color: #555;
 }
 
 .header-button:disabled {
-  background-color: #777;
-  color: #ccc;
-  cursor: not-allowed;
+  background-color: #ccc;
 }
 
-.header-button a {
-  text-decoration: none;
-  color: inherit;
-}
-
-h3 {
-  color: white;
-  font-size: 18px;
+.full-width-line {
+  width: 100vw; /* Используем всю ширину экрана */
+  border: none;
+  border-top: 1px solid #ddd;
   margin: 0;
+  position: relative;
+  left: 50%; /* Для компенсации возможного смещения из-за padding'а */
+  right: 50%;
+  transform: translateX(-50%); /* Для корректного позиционирования */
 }
