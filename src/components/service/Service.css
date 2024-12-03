@@ -1,4 +1,3 @@
-/* Основные стили для карточки услуги */
 .service-card {
     display: flex;
     flex-direction: column;
@@ -11,14 +10,12 @@
     max-width: 350px;
     margin: 20px;
   }
-  
-  /* Эффект при наведении на карточку */
+
   .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   }
-  
-  /* Контейнер для изображения */
+
   .service-card__image-container {
     width: 100%;
     height: 200px;
@@ -33,12 +30,10 @@
     transition: transform 0.3s ease;
   }
   
-  /* Эффект при наведении на изображение */
   .service-card__image-container:hover .service-card__image {
     transform: scale(1.05);
   }
   
-  /* Контент карточки */
   .service-card__content {
     padding: 20px;
     display: flex;
@@ -63,7 +58,7 @@
   }
   
   .service-card__link:hover .service-card__title {
-    color: #007bff; /* Цвет при наведении на ссылку */
+    color: #007bff;
   }
   
   .service-card__description {
@@ -73,7 +68,6 @@
     margin-bottom: 15px;
   }
   
-  /* Добавление кнопки или дополнительного контента внизу карточки */
   .service-card__button {
     padding: 10px 15px;
     background-color: #007bff;

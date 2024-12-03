@@ -20,9 +20,7 @@ const NewsList = ({ data }) => {
     }
   };
 
-  if (!data || data.length === 0) {
-    return <p>Нет новостей для отображения.</p>;
-  }
+
 
   return (
     <div className="news-container">

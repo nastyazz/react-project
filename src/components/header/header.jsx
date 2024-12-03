@@ -32,7 +32,7 @@ const Header = () => {
               </NavLink>
             ) : (
               <NavLink to={`${AppRout.userinfo}${user.id}`} className="header-button">
-                <Button label="Профиль" />
+                <Button label={user.firstName + " " + user.lastName} />
               </NavLink>
             )}
           </div>
